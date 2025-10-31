@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: myapp-service
+  name: productionno-1-service
 spec:
   type: NodePort
   ports:
@@ -9,4 +9,4 @@ spec:
       port: 9000
       targetPort: 8080
   selector:
-    app: myapp
+    app: productionno-1-deployment
