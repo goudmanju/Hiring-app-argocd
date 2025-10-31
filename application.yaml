@@ -7,12 +7,12 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/betawins/Hiring-app-argocd.git
+    repoURL: https://github.com/goudmanju/Hiring-app-argocd.git
     targetRevision: HEAD
     path: dev
   destination: 
     server: https://kubernetes.default.svc
-    namespace: myapp
+    namespace: argocd
 
   syncPolicy:
     syncOptions:
